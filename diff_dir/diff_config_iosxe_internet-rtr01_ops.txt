@@ -1,0 +1,8 @@
+--- baseline/test-sandbox/config_iosxe_internet-rtr01_ops.txt
++++ latest/test-sandbox/config_iosxe_internet-rtr01_ops.txt
++Current configuration : 6890 bytes: 
++ip route 0.0.0.0 0.0.0.0 10.10.10.1: 
++ip route 0.0.0.0 0.0.0.0 172.31.252.2: 
++router ospf 1: 
++ network 1.1.1.0 0.0.0.255 area 0: 
+-Current configuration : 6757 bytes: 

@@ -1,0 +1,22 @@
+--- baseline/test-sandbox/static_routing_iosxe_internet-rtr01_ops.txt
++++ latest/test-sandbox/static_routing_iosxe_internet-rtr01_ops.txt
+ info:
+  vrf:
+   default:
+    address_family:
+     ipv4:
+      routes:
++      0.0.0.0/0: 
++       next_hop: 
++        next_hop_list: 
++         1: 
++          active: False
++          index: 1
++          next_hop: 10.10.10.1
++          preference: 1
++         2: 
++          active: True
++          index: 2
++          next_hop: 172.31.252.2
++          preference: 1
++       route: 0.0.0.0/0

@@ -1,0 +1,45 @@
++++ internet-rtr01 with alias 'cli': executing command 'show ip route' +++
+show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, m - OMP
+       n - NAT, Ni - NAT inside, No - NAT outside, Nd - NAT DIA
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       H - NHRP, G - NHRP registered, g - NHRP registration summary
+       o - ODR, P - periodic downloaded static route, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+S     172.16.0.0/16 [1/0] via 172.31.252.2
+      172.31.0.0/16 is variably subnetted, 4 subnets, 2 masks
+C        172.31.0.0/24 is directly connected, GigabitEthernet3
+L        172.31.0.1/32 is directly connected, GigabitEthernet3
+C        172.31.252.0/24 is directly connected, GigabitEthernet2
+L        172.31.252.1/32 is directly connected, GigabitEthernet2
+internet-rtr01#
++++ internet-rtr01 with alias 'cli': executing command 'show ipv6 route' +++
+show ipv6 route
+IPv6 Routing Table - default - 1 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, R - RIP, H - NHRP, I1 - ISIS L1
+       I2 - ISIS L2, IA - ISIS interarea, IS - ISIS summary, D - EIGRP
+       EX - EIGRP external, RL - RPL, O - OSPF Intra, OI - OSPF Inter
+       OE1 - OSPF ext 1, OE2 - OSPF ext 2, ON1 - OSPF NSSA ext 1
+       ON2 - OSPF NSSA ext 2, la - LISP alt, lr - LISP site-registrations
+       ld - LISP dyn-eid, lA - LISP away, le - LISP extranet-policy
+       lp - LISP publications, a - Application, m - OMP
+L   FF00::/8 [0/0]
+     via Null0, receive
+internet-rtr01#
++====================================================================================================================================================+
+| Commands for learning feature 'Routing'                                                                                                            |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpRouteDistributor'>                                                                       |
+|   cmd: <class 'genie.libs.parser.iosxe.show_routing.ShowIpv6RouteDistributor'>                                                                     |
+|====================================================================================================================================================|

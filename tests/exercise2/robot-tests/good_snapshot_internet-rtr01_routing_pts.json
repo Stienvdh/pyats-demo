@@ -1,0 +1,299 @@
+{
+    "routing": {
+        "internet-rtr01": {
+            "py/state": {
+                "callables": {},
+                "device": "internet-rtr01",
+                "context_manager": {},
+                "attributes": null,
+                "commands": null,
+                "connections": null,
+                "ops_schema": {
+                    "info": {
+                        "ipv6_unicast_routing_enabled": {
+                            "schema": "*",
+                            "schemaType": {
+                                "py/type": "builtins.str"
+                            },
+                            "missed": [],
+                            "path": []
+                        },
+                        "ip_routing_enabled": {
+                            "schema": "*",
+                            "schemaType": {
+                                "py/type": "builtins.str"
+                            },
+                            "missed": [],
+                            "path": []
+                        },
+                        "vrf": {
+                            "Any  (str) *": {
+                                "address_family": {
+                                    "Any  (str) *": {
+                                        "routes": {
+                                            "Any  (str) *": {
+                                                "route": {
+                                                    "schema": "*",
+                                                    "schemaType": {
+                                                        "py/type": "builtins.str"
+                                                    },
+                                                    "missed": [],
+                                                    "path": []
+                                                },
+                                                "active": {
+                                                    "schema": "*",
+                                                    "schemaType": {
+                                                        "py/type": "builtins.str"
+                                                    },
+                                                    "missed": [],
+                                                    "path": []
+                                                },
+                                                "route_preference": {
+                                                    "schema": "*",
+                                                    "schemaType": {
+                                                        "py/type": "builtins.str"
+                                                    },
+                                                    "missed": [],
+                                                    "path": []
+                                                },
+                                                "metric": {
+                                                    "schema": "*",
+                                                    "schemaType": {
+                                                        "py/type": "builtins.str"
+                                                    },
+                                                    "missed": [],
+                                                    "path": []
+                                                },
+                                                "source_protocol": {
+                                                    "schema": "*",
+                                                    "schemaType": {
+                                                        "py/type": "builtins.str"
+                                                    },
+                                                    "missed": [],
+                                                    "path": []
+                                                },
+                                                "source_protocol_codes": {
+                                                    "schema": "*",
+                                                    "schemaType": {
+                                                        "py/type": "builtins.str"
+                                                    },
+                                                    "missed": [],
+                                                    "path": []
+                                                },
+                                                "last_updated": {
+                                                    "schema": "*",
+                                                    "schemaType": {
+                                                        "py/type": "builtins.str"
+                                                    },
+                                                    "missed": [],
+                                                    "path": []
+                                                },
+                                                "next_hop": {
+                                                    "outgoing_interface": {
+                                                        "Any  (str) *": {
+                                                            "outgoing_interface": {
+                                                                "schema": "*",
+                                                                "schemaType": {
+                                                                    "py/type": "builtins.str"
+                                                                },
+                                                                "missed": [],
+                                                                "path": []
+                                                            }
+                                                        }
+                                                    },
+                                                    "next_hop_list": {
+                                                        "Any  (str) *": {
+                                                            "index": {
+                                                                "schema": "*",
+                                                                "schemaType": {
+                                                                    "py/type": "builtins.str"
+                                                                },
+                                                                "missed": [],
+                                                                "path": []
+                                                            },
+                                                            "next_hop": {
+                                                                "schema": "*",
+                                                                "schemaType": {
+                                                                    "py/type": "builtins.str"
+                                                                },
+                                                                "missed": [],
+                                                                "path": []
+                                                            },
+                                                            "outgoing_interface": {
+                                                                "schema": "*",
+                                                                "schemaType": {
+                                                                    "py/type": "builtins.str"
+                                                                },
+                                                                "missed": [],
+                                                                "path": []
+                                                            },
+                                                            "updated": {
+                                                                "schema": "*",
+                                                                "schemaType": {
+                                                                    "py/type": "builtins.str"
+                                                                },
+                                                                "missed": [],
+                                                                "path": []
+                                                            }
+                                                        }
+                                                    },
+                                                    "special_nex_hop": {
+                                                        "Any  (str) *": {
+                                                            "special_next_hop": {
+                                                                "schema": "*",
+                                                                "schemaType": {
+                                                                    "py/type": "builtins.str"
+                                                                },
+                                                                "missed": [],
+                                                                "path": []
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "diff_ignore": {
+                    "py/reduce": [
+                        {
+                            "py/type": "collections.deque"
+                        },
+                        {
+                            "py/tuple": []
+                        },
+                        null,
+                        {
+                            "py/tuple": [
+                                "maker",
+                                "callables",
+                                "device",
+                                "diff_ignore",
+                                "ops_schema"
+                            ]
+                        }
+                    ]
+                },
+                "info": {
+                    "vrf": {
+                        "default": {
+                            "address_family": {
+                                "ipv4": {
+                                    "routes": {
+                                        "172.31.252.1/32": {
+                                            "route": "172.31.252.1/32",
+                                            "active": true,
+                                            "source_protocol": "local",
+                                            "source_protocol_codes": "L",
+                                            "next_hop": {
+                                                "outgoing_interface": {
+                                                    "GigabitEthernet2": {
+                                                        "outgoing_interface": "GigabitEthernet2"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "172.31.252.0/24": {
+                                            "route": "172.31.252.0/24",
+                                            "active": true,
+                                            "source_protocol": "connected",
+                                            "source_protocol_codes": "C",
+                                            "next_hop": {
+                                                "outgoing_interface": {
+                                                    "GigabitEthernet2": {
+                                                        "outgoing_interface": "GigabitEthernet2"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "172.31.0.1/32": {
+                                            "route": "172.31.0.1/32",
+                                            "active": true,
+                                            "source_protocol": "local",
+                                            "source_protocol_codes": "L",
+                                            "next_hop": {
+                                                "outgoing_interface": {
+                                                    "GigabitEthernet3": {
+                                                        "outgoing_interface": "GigabitEthernet3"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "172.31.0.0/24": {
+                                            "route": "172.31.0.0/24",
+                                            "active": true,
+                                            "source_protocol": "connected",
+                                            "source_protocol_codes": "C",
+                                            "next_hop": {
+                                                "outgoing_interface": {
+                                                    "GigabitEthernet3": {
+                                                        "outgoing_interface": "GigabitEthernet3"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "172.16.0.0/16": {
+                                            "route": "172.16.0.0/16",
+                                            "active": true,
+                                            "route_preference": 1,
+                                            "metric": 0,
+                                            "source_protocol": "static",
+                                            "source_protocol_codes": "S",
+                                            "next_hop": {
+                                                "next_hop_list": {
+                                                    "1": {
+                                                        "index": 1,
+                                                        "next_hop": "172.31.252.2"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "0.0.0.0/0": {
+                                            "route": "0.0.0.0/0",
+                                            "active": true,
+                                            "route_preference": 1,
+                                            "metric": 0,
+                                            "source_protocol": "static",
+                                            "source_protocol_codes": "S*",
+                                            "next_hop": {
+                                                "next_hop_list": {
+                                                    "1": {
+                                                        "index": 1,
+                                                        "next_hop": "172.31.252.2"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "ipv6": {
+                                    "routes": {
+                                        "FF00::/8": {
+                                            "route": "FF00::/8",
+                                            "active": true,
+                                            "route_preference": 0,
+                                            "metric": 0,
+                                            "source_protocol": "local",
+                                            "source_protocol_codes": "L",
+                                            "next_hop": {
+                                                "outgoing_interface": {
+                                                    "Null0": {
+                                                        "outgoing_interface": "Null0"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

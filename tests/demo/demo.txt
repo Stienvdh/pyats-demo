@@ -1,0 +1,27 @@
+#### ROBOT ####
+
+# Get initial report/snapshot
+robot --outputdir initial robot_initial_snapshot.robot
+
+# Add static default route
+ssh cisco@10.10.20.181
+cisco
+sh ip route
+conf t
+ip route 0.0.0.0 0.0.0.0 172.31.252.2 
+do sh ip route
+
+# New report/snapshot + comparison
+robot --outputdir compare robot_compare_snapshot.robot
+
+# Clean up route
+no ip route 0.0.0.0 0.0.0.0 172.31.252.2
+do sh ip route
+
+#### GENIE ####
+
+#### TESTCASES ####
+
+# Run and view cases
+pyats run job testcases/custom_route_test_job.py --testbed-file ../../testbed/testbed.yaml
+pyats logs view

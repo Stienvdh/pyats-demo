@@ -1,0 +1,20 @@
+--- baseline/test-sandbox/routing_iosxe_internet-rtr01_ops.txt
++++ latest/test-sandbox/routing_iosxe_internet-rtr01_ops.txt
+ info:
+  vrf:
+   default:
+    address_family:
+     ipv4:
+      routes:
++      0.0.0.0/0: 
++       active: True
++       metric: 0
++       next_hop: 
++        next_hop_list: 
++         1: 
++          index: 1
++          next_hop: 172.31.252.2
++       route: 0.0.0.0/0
++       route_preference: 1
++       source_protocol: static
++       source_protocol_codes: S*

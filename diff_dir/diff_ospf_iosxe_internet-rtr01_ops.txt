@@ -1,0 +1,57 @@
+--- baseline/test-sandbox/ospf_iosxe_internet-rtr01_ops.txt
++++ latest/test-sandbox/ospf_iosxe_internet-rtr01_ops.txt
++info: 
++ vrf: 
++  default: 
++   address_family: 
++    ipv4: 
++     instance: 
++      1: 
++       adjacency_stagger: 
++        initial_number: 300
++        maximum_number: 300
++       areas: 
++        0.0.0.0: 
++         area_id: 0.0.0.0
++         area_type: normal
++         mpls: 
++          te: 
++           enable: False
++         statistics: 
++          area_scope_lsa_cksum_sum: 0x000000
++          area_scope_lsa_count: 0
++          spf_runs_count: 0
++       auto_cost: 
++        enable: False
++       bfd: 
++        enable: False
++       graceful_restart: 
++        cisco: 
++         enable: False
++         type: cisco
++        ietf: 
++         enable: False
++         type: ietf
++       nsr: 
++        enable: False
++       preference: 
++        single_value: 
++         all: 110
++       router_id: 172.31.252.1
++       spf_control: 
++        paths: 4
++        throttle: 
++         lsa: 
++          hold: 200
++          maximum: 5000
++          start: 50
++         spf: 
++          hold: 200
++          maximum: 5000
++          start: 50
++       stub_router: 
++        always: 
++         always: False
++         external_lsa: False
++         include_stub: False
++         summary_lsa: False
